@@ -1,8 +1,10 @@
 #!/bin/bash
 
-ln -s "${REPO_PATH}"/dotfiles/nvim ~/.config/nvim
+SCRIPT_PATH=$(cd $(dirname $0) && pwd)
 
-ln -s "${REPO_PATH}"/dotfiles/.Brewfile ~
-ln -s "${REPO_PATH}"/dotfiles/.env ~
-ln -s "${REPO_PATH}"/dotfiles/.zshrc ~
-ln -s "${REPO_PATH}"/dotfiles/.gitconfig ~
+ln -s -i "${SCRIPT_PATH}"/../nvim ~/.config/nvim
+
+ln -s -i "${SCRIPT_PATH}"/../.Brewfile ~
+ln -s -i "${SCRIPT_PATH}"/../.env ~
+ln -s -i "${SCRIPT_PATH}"/../.zshrc ~
+ln -s -i "${SCRIPT_PATH}"/../.gitconfig ~

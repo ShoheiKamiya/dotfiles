@@ -30,6 +30,10 @@ function re() {
   [ -z ${repo} ] || cd ${REPO_PATH}/${repo}
 }
 
+function replace_command() {
+  echo "git grep -l $1 | xargs sed -i '' "s%$1%$2%g""
+}
+
 function snippets() {
   BUFFER=$(cat ${TOOLBOX_PATH}/.snippets | fzf)
   CURSOR=$#BUFFER

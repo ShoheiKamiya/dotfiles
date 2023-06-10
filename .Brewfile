@@ -28,9 +28,6 @@ cask "docker", args: { appdir: "/Applications" }
 cask "google-chrome", args: { appdir: "/Applications" }
 cask "iterm2", args: { appdir: "/Applications" }
 cask "kindle"
-cask "notion"
-cask "postman"
-cask "sequel-ace"
 cask "skitch", args: { appdir: "/Applications" }
 cask "slack", args: { appdir: "/Applications" }
 cask "visual-studio-code", args: { appdir: "/Applications" }

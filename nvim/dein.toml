@@ -1,0 +1,55 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'projekt0n/github-nvim-theme'
+hook_add = '''
+colorscheme github_dark
+'''
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+
+[[plugins]]
+repo = 'yuki-yano/fzf-preview.vim'
+rev = 'release/rpc'
+hook_add = '''
+nmap <Leader>f [fzf-p]
+xmap <Leader>f [fzf-p]
+
+nnoremap <silent> <Leader>p     :<C-u>FzfPreviewProjectFiles<CR>
+nnoremap <silent> <Leader>b     :<C-u>FzfPreviewBuffers<CR>
+nnoremap <silent> <Leader>m     :<C-u>FzfPreviewMarksRpc<CR>
+nnoremap <silent> <Leader>g     :<C-u>FzfPreviewProjectGrepRpc 
+'''
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+
+[[plugins]]
+repo = 'arthurxavierx/vim-caser'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+hook_add = '''
+let g:user_emmet_install_global = 0
+imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+autocmd FileType html,css,scss,eruby,typescriptreact EmmetInstall
+'''
+
+[[plugins]]
+repo = 'lambdalisue/fern.vim'
+hook_add='''
+let g:fern#default_hidden=1
+'''

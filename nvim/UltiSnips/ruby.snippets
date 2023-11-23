@@ -1,0 +1,15 @@
+snippet describe "RSpec template"
+describe "#$1" do
+  subject {}
+
+  context "" do
+    let() {}
+
+    it { is_expected.to eq "" }
+  end
+end
+endsnippet
+
+snippet debug "Logger for debug"
+Rails.logger.debug "[DEBUG] ***** #{$1} *****"
+endsnippet

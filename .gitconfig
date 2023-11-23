@@ -1,0 +1,32 @@
+[user]
+	name = ShoheiKamiya
+	email = see $GIT_AUTHOR_EMAIL
+[alias]
+  a = add
+  amm = commit --amend --no-edit
+  br = branch
+  cm = commit
+  cmm = commit -m
+  d = diff
+  df = diff --name-only
+  dfs = diff --staged
+  dt = difftool
+  lg = log --date=short --pretty=format:'%ad %C(red)%D %C(yellow)%h%Creset %s' --decorate-refs=tags
+  lgp = log --pretty=format:'%C(auto)%h %cd %s %C(blue)%an' --date=short
+  logs = log --oneline -n 5
+  re = restore
+  st = status
+  sw = switch
+[core]
+  editor = vim
+  pager = LESSCHARSET=utf-8 less
+  quotepath = false
+[pull]
+  rebase = false
+  ff = only
+[diff]
+  tool = nvimdiff
+[difftool]
+  prompt = false
+[init]
+  defaultBranch = main

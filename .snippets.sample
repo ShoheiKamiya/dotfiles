@@ -1,0 +1,3 @@
+docker compose run --rm app bundle exec
+docker image ls --format '{{.Repository}}:{{.Tag}}' | fzf | xargs docker image rm
+gh pr create -d -a @me -B develop

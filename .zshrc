@@ -35,7 +35,7 @@ function replace_command() {
 }
 
 function snippets() {
-  BUFFER=$(cat ${TOOLBOX_PATH}/.snippets | fzf)
+  BUFFER=$(cat ${HOME}/.snippets | fzf)
   CURSOR=$#BUFFER
 }
 zle -N snippets

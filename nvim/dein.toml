@@ -53,3 +53,6 @@ repo = 'lambdalisue/fern.vim'
 hook_add='''
 let g:fern#default_hidden=1
 '''
+
+[[plugins]]
+repo =  'github/copilot.vim'

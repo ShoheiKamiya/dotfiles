@@ -1,7 +1,5 @@
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/cask-fonts"
 brew "awscli"
 brew "brew-gem"
@@ -21,6 +19,7 @@ brew "node"
 brew "rbenv"
 brew "ripgrep"
 brew "ruby-build"
+brew "tfenv"
 brew "yarn"
 cask "1password", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }

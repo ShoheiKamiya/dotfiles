@@ -17,6 +17,7 @@ alias g="git"
 alias gg="git grep"
 alias pr="gh pr view -w"
 alias repo="gh repo view -w"
+alias t="terraform"
 
 # ====================
 # Functions

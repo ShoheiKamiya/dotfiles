@@ -14,6 +14,7 @@
   lg = log --date=short --pretty=format:'%ad %C(red)%D %C(yellow)%h%Creset %s' --decorate-refs=tags
   lgp = log --pretty=format:'%C(auto)%h %cd %s %C(blue)%an' --date=short
   logs = log --oneline -n 5
+  graph = log --graph --pretty=oneline
   re = restore
   st = status
   sw = switch
@@ -30,3 +31,5 @@
   prompt = false
 [init]
   defaultBranch = main
+[url "git@github.com:"]
+  insteadOf = https://github.com/

@@ -40,6 +40,19 @@ function snippets() {
   BUFFER=$(cat ${HOME}/.snippets | fzf)
   CURSOR=$#BUFFER
 }
+
+function aws_profile() {
+  PROFILE=$(cat ~/.aws/myaccounts.json | jq -r '.[] | [.name, .account_id] | join(" | ")' | fzf | cut -d " " -f 1)
+  export AWS_PROFILE=${PROFILE}
+  echo switched to ${AWS_PROFILE}
+}
+
+function aws_console() {
+  ACCOUNT_ID=$(jq -r ".[] | select(.name == \"${AWS_PROFILE}\") | .account_id" < ~/.aws/myaccounts.json)
+  echo "open ${AWS_PROFILE} | ${ACCOUNT_ID}"
+  open "https://ga-tech.awsapps.com/start/#/console?account_id=${ACCOUNT_ID}&role_name=AdministratorAccess"
+}
+
 zle -N snippets
 bindkey '^o' snippets
 
@@ -75,6 +88,12 @@ PROMPT=$(tr -d "\n" <<PROMPT
 %K{green} $(branch black) %k 
 PROMPT
 )
+
+function set_rprompt() {
+  RPROMPT="[${AWS_PROFILE}]"
+}
+
+precmd_functions+=set_rprompt
 
 # ====================
 # Setup history

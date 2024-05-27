@@ -28,7 +28,7 @@ function sw() {
 }
 
 function re() {
-  repo=$(find ${REPO_PATH} -type d -maxdepth 2 -mindepth 2 | sed s%${REPO_PATH}/%% | fzf)
+  repo=$(find ${REPO_PATH} -type d -maxdepth 2 -mindepth 2 | sort | sed s%${REPO_PATH}/%% | fzf)
   [ -z ${repo} ] || cd ${REPO_PATH}/${repo}
 }
 

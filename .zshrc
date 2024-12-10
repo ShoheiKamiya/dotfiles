@@ -6,6 +6,7 @@ export RBENV_VERSION=3.2.2
 export EDITOR='nvim'
 export REPO_PATH=${HOME}/repo
 export TOOLBOX_PATH=${REPO_PATH}/ShoheiKamiya/toolbox
+export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
 $(sed 's/^/export /g' ${HOME}/.env)
 
 # ====================
@@ -42,15 +43,9 @@ function snippets() {
 }
 
 function aws_profile() {
-  PROFILE=$(cat ~/.aws/myaccounts.json | jq -r '.[] | [.name, .account_id] | join(" | ")' | fzf | cut -d " " -f 1)
+  PROFILE=$(cat ~/.aws/myaccounts.json | jq -r '.[] | [.accountName, .accountId] | join(" | ")' | fzf | cut -d " " -f 1)
   export AWS_PROFILE=${PROFILE}
   echo switched to ${AWS_PROFILE}
-}
-
-function aws_console() {
-  ACCOUNT_ID=$(jq -r ".[] | select(.name == \"${AWS_PROFILE}\") | .account_id" < ~/.aws/myaccounts.json)
-  echo "open ${AWS_PROFILE} | ${ACCOUNT_ID}"
-  open "https://ga-tech.awsapps.com/start/#/console?account_id=${ACCOUNT_ID}&role_name=AdministratorAccess"
 }
 
 zle -N snippets
@@ -143,3 +138,5 @@ PATH
 autoload -Uz compinit && compinit
 setopt no_clobber
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"

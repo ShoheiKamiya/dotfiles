@@ -1,6 +1,6 @@
 [user]
-	name = ShoheiKamiya
-	email = see $GIT_AUTHOR_EMAIL
+  name = ShoheiKamiya
+  email = 49185403+ShoheiKamiya@users.noreply.github.com
 [alias]
   a = add
   amm = commit --amend --no-edit

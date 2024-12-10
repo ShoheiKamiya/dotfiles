@@ -16,11 +16,13 @@ brew "jq"
 brew "neovim"
 brew "nkf"
 brew "node"
+brew "nmap"
 brew "rbenv"
 brew "ripgrep"
 brew "ruby-build"
 brew "tfenv"
 brew "yarn"
+brew "watch"
 cask "1password", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }

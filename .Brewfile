@@ -30,6 +30,5 @@ cask "font-myricam"
 cask "figma", args: { appdir: "/Applications" }
 cask "google-chrome", args: { appdir: "/Applications" }
 cask "iterm2", args: { appdir: "/Applications" }
-cask "kindle"
 cask "slack", args: { appdir: "/Applications" }
 cask "zoom", args: { appdir: "/Applications" }

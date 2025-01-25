@@ -31,5 +31,7 @@
   prompt = false
 [init]
   defaultBranch = main
-[url "git@github.com:"]
-  insteadOf = https://github.com/
+[url "https://github.com/"]
+  insteadOf = git@github.com:
+[credential]
+  helper = osxkeychain

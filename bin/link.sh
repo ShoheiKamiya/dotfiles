@@ -11,4 +11,3 @@ ln -s -i "${SCRIPT_PATH}"/../Gemfile ~
 ln -s -i "${SCRIPT_PATH}"/../.env ~
 ln -s -i "${SCRIPT_PATH}"/../.snippets ~
 ln -s -i "${SCRIPT_PATH}"/../.zshrc ~
-ln -s -i "${SCRIPT_PATH}"/../.gitconfig ~

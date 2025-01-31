@@ -2,7 +2,7 @@
 # ENV
 # ====================
 export AWS_DEFAULT_REGION=ap-northeast-1
-export RBENV_VERSION=3.2.2
+export RBENV_VERSION=3.4.1
 export EDITOR='nvim'
 export REPO_PATH=${HOME}/repo
 export TOOLBOX_PATH=${REPO_PATH}/ShoheiKamiya/toolbox

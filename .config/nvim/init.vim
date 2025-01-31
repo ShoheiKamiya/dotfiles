@@ -27,6 +27,7 @@ nnoremap <C-n> :Fern . -reveal=% -drawer -toggle -width=40<CR>
 nnoremap <C-p> "0p
 vnoremap <C-p> "0p
 tnoremap <Esc> <C-\><C-n>
+inoremap jj <Esc>
 
 command! CopyPath :!echo % | tr -d '\n' | pbcopy
 

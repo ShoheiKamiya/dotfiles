@@ -1,6 +1,4 @@
 tap "homebrew/bundle"
-tap "homebrew/cask-versions"
-tap "homebrew/cask-fonts"
 brew "awscli"
 brew "brew-gem"
 brew "cask"
@@ -32,3 +30,5 @@ cask "google-chrome", args: { appdir: "/Applications" }
 cask "iterm2", args: { appdir: "/Applications" }
 cask "slack", args: { appdir: "/Applications" }
 cask "zoom", args: { appdir: "/Applications" }
+cask "notion", args: { appdir: "/Applications" }
+cask "karabiner-elements", args: { appdir: "/Applications" }

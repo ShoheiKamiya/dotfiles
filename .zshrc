@@ -138,5 +138,5 @@ PATH
 autoload -Uz compinit && compinit
 setopt no_clobber
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
-export PATH="/opt/homebrew/opt/postgresql@12/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql-client@8.0/bin:$PATH"

@@ -7,6 +7,8 @@ export EDITOR='nvim'
 export REPO_PATH=${HOME}/repo
 export TOOLBOX_PATH=${REPO_PATH}/ShoheiKamiya/toolbox
 export TF_PLUGIN_CACHE_DIR="$HOME/.terraform.d/plugin-cache"
+export TF_CLI_ARGS_plan='-parallelism=40'
+export TF_CLI_ARGS_apply='-parallelism=40'
 $(sed 's/^/export /g' ${HOME}/.env)
 
 # ====================

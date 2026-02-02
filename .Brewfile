@@ -23,7 +23,7 @@ brew "yarn"
 brew "watch"
 cask "1password", args: { appdir: "/Applications" }
 cask "alfred", args: { appdir: "/Applications" }
-cask "docker", args: { appdir: "/Applications" }
+cask "docker-desktop", args: { appdir: "/Applications" }
 cask "font-myricam"
 cask "figma", args: { appdir: "/Applications" }
 cask "google-chrome", args: { appdir: "/Applications" }
@@ -31,4 +31,5 @@ cask "iterm2", args: { appdir: "/Applications" }
 cask "slack", args: { appdir: "/Applications" }
 cask "zoom", args: { appdir: "/Applications" }
 cask "notion", args: { appdir: "/Applications" }
+cask "visual-studio-code", args: { appdir: "/Applications" }
 cask "karabiner-elements", args: { appdir: "/Applications" }

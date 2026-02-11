@@ -9,8 +9,8 @@ export TF_CLI_ARGS_apply='-parallelism=40'
 $(sed 's/^/export /g' ${HOME}/.env)
 
 export PATH=$(tr "\n" ":" <<PATH
-${HOME}/.rbenv/shims
-${HOME}/.rbenv/bin
+${HOME}/.asdf/shims
+${HOME}/.local/bin
 /opt/homebrew/bin
 /usr/local/bin
 /usr/bin
@@ -18,7 +18,5 @@ ${HOME}/.rbenv/bin
 /usr/sbin
 /sbin
 ${TOOLBOX_PATH}
-/opt/homebrew/opt/postgresql@16/bin
-/opt/homebrew/opt/mysql-client@8.0/bin
 PATH
 )

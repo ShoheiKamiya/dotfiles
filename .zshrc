@@ -11,5 +11,6 @@ zle -N snippets && bindkey '^o' snippets
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^x' edit-command-line
+bindkey -v
 
 autoload -Uz compinit && compinit

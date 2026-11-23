@@ -1,5 +1,5 @@
 [user]
-  name = ShoheiKamiya
+	name = Shohei Kamiya
   email = 49185403+ShoheiKamiya@users.noreply.github.com
 [alias]
   a = add
@@ -33,3 +33,14 @@
   defaultBranch = main
 [credential]
   helper = osxkeychain
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

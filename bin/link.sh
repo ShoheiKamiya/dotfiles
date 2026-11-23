@@ -13,3 +13,4 @@ ln -s -i "${SCRIPT_PATH}"/../.zshrc ~
 ln -s -i "${SCRIPT_PATH}"/../.zsh ~
 ln -s -i "${SCRIPT_PATH}"/../.claude/settings.json ~/.claude/
 ln -s -i "${SCRIPT_PATH}"/../.claude/CLAUDE.md ~/.claude/
+ln -s -i "${SCRIPT_PATH}"/../.claude/statusline.sh ~/.claude/

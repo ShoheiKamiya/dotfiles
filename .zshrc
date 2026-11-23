@@ -1,4 +1,13 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("${HOME}/.zsh/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
 setopt no_clobber
+
+bindkey -v # キーマップがリセットされるのでキーマップの設定はこの後に行う
 
 . ${HOME}/.zsh/env.sh
 . ${HOME}/.zsh/aliases.sh
@@ -7,10 +16,7 @@ setopt no_clobber
 . ${HOME}/.zsh/history.sh
 
 zle -N snippets && bindkey '^o' snippets
-
 autoload -Uz edit-command-line
 zle -N edit-command-line
-bindkey '^x' edit-command-line
-bindkey -v
-
+bindkey '^g' edit-command-line
 autoload -Uz compinit && compinit

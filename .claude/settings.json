@@ -1,36 +1,28 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "permissions": {
-    "allow": [
-      "Bash(ls:*)",
-      "Bash(rg:*)",
-      "Bash(gh pr view:*)",
-      "Bash(gh pr diff:*)",
-      "Bash(find:*)",
-      "Bash(mkdir:*)",
-      "mcp__github__get*",
-      "mcp__github__list*",
-      "mcp__github__search*",
-      "mcp__github__create_pull_request",
-      "mcp__terraform"
-    ]
+  "alwaysThinkingEnabled": true,
+  "autoCompactEnabled": false,
+  "editorMode": "normal",
+  "effortLevel": "high",
+  "enabledPlugins": {
+    "eli5@claude-community": true,
+    "skill-creator@claude-plugins-official": true
   },
-  "model": "sonnet",
+  "extraKnownMarketplaces": {
+    "claude-community": {
+      "source": {
+        "repo": "anthropics/claude-plugins-community",
+        "source": "github"
+      }
+    }
+  },
   "hooks": {
     "Notification": [
       {
         "hooks": [
           {
-            "command": "afplay /System/Library/Sounds/Bottle.aiff",
-            "type": "command"
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -39,8 +31,8 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -49,8 +41,8 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -59,8 +51,8 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -69,8 +61,8 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -79,8 +71,8 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -89,16 +81,8 @@
       {
         "hooks": [
           {
-            "command": "afplay /System/Library/Sounds/Funk.aiff",
-            "type": "command"
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -107,8 +91,8 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -117,8 +101,8 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
@@ -127,20 +111,34 @@
       {
         "hooks": [
           {
-            "command": "~/.config/iterm2/cc-status",
-            "type": "command"
+            "type": "command",
+            "command": "~/.config/iterm2/it2 handle-agent-hook"
           }
         ]
       }
     ]
   },
+  "language": "日本語",
+  "permissions": {
+    "allow": [
+      "Bash(ls *)",
+      "Bash(rg *)",
+      "Bash(find *)",
+      "Bash(mkdir *)",
+      "Bash(gh pr view *)",
+      "Bash(gh pr diff *)",
+      "Bash(gh pr list *)",
+      "Bash(gh pr checks *)",
+      "Bash(gh issue view *)",
+      "Bash(gh issue list *)"
+    ]
+  },
+  "skipWorkflowUsageWarning": true,
   "statusLine": {
-    "type": "command",
-    "command": "~/.claude/statusline.sh"
+    "command": "~/.claude/statusline.sh",
+    "type": "command"
   },
-  "enabledPlugins": {
-    "example-skills@anthropic-agent-skills": true
-  },
-  "alwaysThinkingEnabled": true,
-  "tui": "fullscreen"
+  "theme": "dark",
+  "tui": "fullscreen",
+  "verbose": true
 }

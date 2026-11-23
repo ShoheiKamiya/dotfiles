@@ -1,10 +1,3 @@
-# OPENSPEC:START
-# OpenSpec shell completions configuration
-fpath=("${HOME}/.zsh/completions" $fpath)
-autoload -Uz compinit
-compinit
-# OPENSPEC:END
-
 setopt no_clobber
 
 bindkey -v # キーマップがリセットされるのでキーマップの設定はこの後に行う

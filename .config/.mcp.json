@@ -48,6 +48,12 @@
         "--rm",
         "hashicorp/terraform-mcp-server"
       ]
+    },
+    "drawio": {
+      "command": "npx",
+      "args": [
+        "@drawio/mcp"
+      ]
     }
   }
 }

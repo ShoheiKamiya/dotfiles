@@ -14,3 +14,6 @@ ln -s -i "${SCRIPT_PATH}"/../.zsh ~
 [ -e ~/.claude/settings.json ] || cp "${SCRIPT_PATH}"/../.claude/settings.json ~/.claude/
 ln -s -i "${SCRIPT_PATH}"/../.claude/CLAUDE.md ~/.claude/
 ln -s -i "${SCRIPT_PATH}"/../.claude/statusline.sh ~/.claude/
+# iTerm2 の cc-status は同じディレクトリの it2 を呼ぶため、両方リンクする
+ln -s -i /Applications/iTerm.app/Contents/Resources/utilities/cc-status ~/.config/iterm2/
+ln -s -i /Applications/iTerm.app/Contents/Resources/utilities/it2 ~/.config/iterm2/

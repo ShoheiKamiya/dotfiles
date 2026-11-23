@@ -11,6 +11,6 @@ ln -s -i "${SCRIPT_PATH}"/../.env ~
 ln -s -i "${SCRIPT_PATH}"/../.snippets ~
 ln -s -i "${SCRIPT_PATH}"/../.zshrc ~
 ln -s -i "${SCRIPT_PATH}"/../.zsh ~
-ln -s -i "${SCRIPT_PATH}"/../.claude/settings.json ~/.claude/
+[ -e ~/.claude/settings.json ] || cp "${SCRIPT_PATH}"/../.claude/settings.json ~/.claude/
 ln -s -i "${SCRIPT_PATH}"/../.claude/CLAUDE.md ~/.claude/
 ln -s -i "${SCRIPT_PATH}"/../.claude/statusline.sh ~/.claude/
